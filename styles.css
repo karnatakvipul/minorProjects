@@ -1,0 +1,92 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container to center the calculator */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Calculator styling */
+.calculator {
+    width: 320px;
+}
+
+#inputBox {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    outline: none;
+}
+
+/* Button grid */
+.calculator > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* General button styles */
+.button {
+    width: 70px;
+    height: 60px;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transition: 0.2s;
+}
+
+/* Operator button styles */
+.operator {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #ffeb3b;
+}
+
+/* Equal button style */
+.equalBtn {
+    background-color: #00e676;
+    color: #000;
+}
+
+/* Hover effect */
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Pressed effect */
+.button:active {
+    transform: scale(0.95);
+}
+
+.button.active-key {
+    box-shadow: 0 0 15px #fff, 0 0 20px #00e676;
+    transform: scale(0.95);
+}
